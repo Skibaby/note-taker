@@ -12,7 +12,7 @@ router.get('/notes', (req,res) => {
   });
   
    router.get('/api/notes', (req,res) => {
-      const noteData = fs.readFileSync(path.join(__dirname,'../db/db.json', 'utf8'));
+      const noteData = fs.readFileSync(path.join(__dirname, '../db/db.json'), 'utf8');
       const notes = JSON.parse(noteData);
       return res.json(notes);
    });
@@ -32,7 +32,8 @@ router.get('/notes', (req,res) => {
       const notes = JSON.parse(noteData);
       const filteredNotes = notes.filter((note) => note.id !== req.params.id);
       const data = JSON.stringify(filteredNotes);
-      fs.writeFileSync('../db/db.json', notes);
+      //fs.writeFileSync('../db/db.json', notes);
+      fs.writeFileSync(path.join(__dirname, '../db/db.json'), data);
       return res.json('success');
    });
    router.get('*', (req,res) => {
