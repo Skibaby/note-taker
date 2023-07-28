@@ -31,7 +31,7 @@ node server.js
 ![Shot-1](assets/images/Note-Taker.png)
 ![Shpt-2](assets/images/notephoto.png)
 
-![Alt text](/Users/skisteppa/Downloads/notephoto "Notes Example")
+
 
 ## How To Use
 To begin, Click on the 'Get Started' button on the home page to start adding your notes. When you get to the notes page, you will see saved notes along with the delete icon to trash the note whenever is convenient. You can create a new note with a title and notes within the description. On the top right-hand, you can click save icon to automatically save the new note to the list.
